@@ -1,9 +1,9 @@
 ---
 wts:
-    title: '11 - Create a VM with the CLI'
+    title: 'Create a VM with the CLI'
     module: 'Module 02 - Core Azure Services'
 ---
-# 11 - Create a VM with the CLI
+# Create a VM with the CLI
 
 In this walk-through, we will configure the Cloud Shell, use Azure CLI to create a resource group and virtual machine, and review Azure Advisor recommendations. 
 
