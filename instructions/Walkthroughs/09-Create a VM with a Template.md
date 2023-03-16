@@ -1,6 +1,6 @@
 ---
 wts:
-    title: '09 - Create a VM with a Template'
+    title: 'Create a VM with a Template'
     module: 'Module 02 - Core Azure Services'
 ---
 # 09 - Create a VM with a Template
