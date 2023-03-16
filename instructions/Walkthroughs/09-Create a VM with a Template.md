@@ -3,7 +3,7 @@ wts:
     title: 'Create a VM with a Template'
     module: 'Module 02 - Core Azure Services'
 ---
-# 09 - Create a VM with a Template
+# Create a VM with a Template
 
 In this walkthrough, we will deploy a virtual machine with a QuickStart template and examine monitoring capabilities.
 
