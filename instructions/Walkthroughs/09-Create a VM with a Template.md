@@ -17,7 +17,7 @@ In this task, we will browse the Azure QuickStart gallery and deploy a template 
 
     **Note**: Are there are any templates that are of interest to you?
 
-3. Search for or directly access the [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows?azure-portal=true) template.
+3. Search for or directly access the Deploy a simple Windows VM template.
 
     **Note**: The **Deploy to Azure** button enables you to deploy the template via the Azure portal. During such deployment, you will be prompted only for small set of configuration parameters. 
 
