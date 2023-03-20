@@ -27,7 +27,7 @@ In this task, you will create an Azure App Service Web App.
     | Publish | **Docker Container** |
     | Operating System | **Linux** |
     | Region | **East US** (ignore any service plan availability warnings) |
-    | | |	
+    | Pricing plan | **Free f1** |	
 
 4. Click **Next > Docker** and configure the container information. The startup command is optional and not needed in this exercise. 
 
