@@ -4,7 +4,7 @@ These labs can be useful to obtain [AZ-900T00 and AZ-900T01: Microsoft Azure Fun
 
 2.- [Create a VM with a Template](https://github.com/ETSISI-CCforIoT/azure-fundamentals-en/blob/main/instructions/Walkthroughs/09-Create%20a%20VM%20with%20a%20Template.md)
 
-3.- [Create a VM with Powwrshell](https://github.com/ETSISI-CCforIoT/azure-fundamentals-en/blob/main/instructions/Walkthroughs/10-Create%20a%20VM%20with%20PowerShell.md)
+3.- [Create a VM with Powershell](https://github.com/ETSISI-CCforIoT/azure-fundamentals-en/blob/main/instructions/Walkthroughs/10-Create%20a%20VM%20with%20PowerShell.md)
 
 4.- [Create a VM with the CLI ](https://github.com/ETSISI-CCforIoT/azure-fundamentals-en/blob/main/instructions/Walkthroughs/11-Create%20a%20VM%20with%20the%20CLI.md)
 
