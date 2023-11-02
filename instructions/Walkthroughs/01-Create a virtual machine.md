@@ -24,7 +24,7 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Subscription | **Choose your subscription**|
     | Resource group | **myRGVM** (create new) |
     | Virtual machine name | **myVm** |
-    | Location | **(US) East US**|
+    | Location | **West Europe**|
     | Image | **Windows Server 2019 Datacenter**|
     | Size | Standard D2s v3|
     | Administrator account username | **azureuser** |
