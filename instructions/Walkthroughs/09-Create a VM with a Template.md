@@ -37,14 +37,15 @@ In this task, we will browse the Azure QuickStart gallery and deploy a template 
     | Resource group | **myRGTemplate** (create new) |
     | Region | **West Europe** |
     | Admin username | **azureuser** |
-    | Admin password | **Pa$$w0rd1234** |    
+    | Admin password | **Pa$$w0rd1234** |
+    | Dns Label Prefix| ***Leave at the default***| 
     | Windows OS version | **2019-Datacenter** |
     | Departament Name | **e.g. your course** |
     | Application Name | **e.g. your subject*** |
     | Created By | **your name** |
     | | |
 
-10. Monitor your deployment. 
+11. Monitor your deployment. 
 
 # Task 2: Verify and monitor your virtual machine deployment
 
