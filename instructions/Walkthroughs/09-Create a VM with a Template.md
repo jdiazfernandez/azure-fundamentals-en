@@ -17,36 +17,34 @@ In this task, we will browse the Azure QuickStart gallery and deploy a template 
 
     **Note**: Are there are any templates that are of interest to you?
 
-3. Search for or directly access the Deploy a simple Windows VM template.
+3. Search for or directly access the 'Deploy a simple Windows VM with tags' template.
 
     **Note**: The **Deploy to Azure** button enables you to deploy the template via the Azure portal. During such deployment, you will be prompted only for small set of configuration parameters. 
 
-4. Click the **Deploy to Azure** button. Your browser session will be automatically redirected to the [Azure portal](http://portal.azure.com/).
+4. Review different options. Click Browse Code button and click Visualize.
+   
+6. Click the **Deploy to Azure** button. Your browser session will be automatically redirected to the [Azure portal](http://portal.azure.com/).
 
-5. If prompted, sign in to the Azure subscription you want to use in this lab.
+7. If prompted, sign in to the Azure subscription you want to use in this lab.
 
-6. Click **Edit template**. The Resource Manager template format uses the JSON format. Review the variables and locate the virtual machine name. Change the name to **myVMTemplate**. **Save** your changes. You are returned to the **Custom deployment** blade in the Azure portal.
-
-    ![Screenshot of the template with the VM name change highlilghted.](../images/0901.png)
-
-7. On the **Custom deployment** blade configure the parameters required by the template (replace ***xxxx*** in the DNS label prefix with letters and digits such that the label is globally unique). Leave the defaults for everything else. 
+8. Click **Edit template**. Review the template. The Resource Manager template format uses the [Bicep format](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep). **Discard**. You are returned to the **Custom deployment** blade in the Azure portal.
+    
+9. On the **Custom deployment** blade configure the parameters required by the template (replace ***xxxx*** in the DNS label prefix with letters and digits such that the label is globally unique). Leave the defaults for everything else. 
 
     | Setting| Value|
     |----|----|
     | Subscription | **Choose your subscription**|
     | Resource group | **myRGTemplate** (create new) |
-    | Location | **(US) East US** |
+    | Region | **West Europe** |
     | Admin username | **azureuser** |
-    | Admin password | **Pa$$w0rd1234** |
-    | DNS label prefix | **myvmtemplate*xxxx*** |
+    | Admin password | **Pa$$w0rd1234** |    
     | Windows OS version | **2019-Datacenter** |
+    | Departament Name | **e.g. your course** |
+    | Application Name | **e.g. your subject*** |
+    | Created By | **your name** |
     | | |
 
-8. Check the box **I agree to the terms and conditions stated above** and then click **Purchase**.
-
-    **Note**: There is no cost associated with this template.
-
-9. Monitor your deployment. 
+10. Monitor your deployment. 
 
 # Task 2: Verify and monitor your virtual machine deployment
 
@@ -58,15 +56,15 @@ In this task, we will verify the virtual machine deployed correctly.
 
     ![Screenshot of the virtual machines page. The new VM is shown and running.](../images/0902.png)
 
-3. Select your virtual machine and on the **Overview** pane scroll down to view monitoring data.
+3. Select your virtual machine and on the **Overview** pane scroll down to view properties and monitoring data.
 
     **Note**: The monitoring timeframe can be adjusted from one hour to 30 days.
 
-4. Review different charts that are provided including **CPU (average)**, **Network (total)**, and **Disk bytes (total)**. 
+4. Review different charts that are provided including **VM Availability**, **CPU (average)** and **Disk bytes (total)**. Show more metrics: **Network (total)**, **Disk operations/sec (average)** ...
 
     ![Screenshot of the virtual machine monitoring charts.](../images/0903.png)
 
-5. Click on any chart. Note that you can **Add metric** and change the chart type. As you have time, experiment. 
+5. Note that you can **Add metric** and change the chart type. As you have time, experiment. 
 
 6. Return to the **Overview** blade.
 
