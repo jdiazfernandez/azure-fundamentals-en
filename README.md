@@ -1,6 +1,6 @@
 These labs can be useful to obtain [AZ-900T00 and AZ-900T01: Microsoft Azure Fundamentals certification](https://learn.microsoft.com/en-us/certifications/exams/az-900/)
 
-1.- [Create a Virtual Machine](/blob/main/instructions/Walkthroughs/01-Create%20a%20virtual%20machine.md)
+1.- [Create a Virtual Machine](instructions/Walkthroughs/01-Create%20a%20virtual%20machine.md)
 
 2.- [Create a VM with a Template](https://github.com/ETSISI-CCforIoT/azure-fundamentals-en/blob/main/instructions/Walkthroughs/09-Create%20a%20VM%20with%20a%20Template.md)
 
