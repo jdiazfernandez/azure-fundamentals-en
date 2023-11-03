@@ -23,7 +23,9 @@ In this task, we will create a new container instance for the web application.
 	| Subscription | **Choose your subscription** |
 	| Resource group | **myRGContainer** (create new) |
 	| Container name| **mycontainer**|
-	| Region | **(US) East US** |
+	| Region | **West Europe** |
+	| Availability zones | **None** |
+	| SKU | **Standard** |
 	| Image source| **Other registry**|
 	| Image type| **Public**|
 	| Image| **mcr.microsoft.com/azuredocs/aci-helloworld**|
@@ -32,7 +34,7 @@ In this task, we will create a new container instance for the web application.
 	|||
 
 
-4. Configure the Networking tab (replace **xxxx** with letters and digits such that the name is globally unique). Leave all other settings at their default values .
+5. Configure the Networking tab (replace **xxxx** with letters and digits such that the name is globally unique). Leave all other settings at their default values .
 
 	| Setting| Value|
 	|--|--|
@@ -43,13 +45,13 @@ In this task, we will create a new container instance for the web application.
 
 	![Screenshot of the configuration pane of the create container instances blade, in Azure portal, with the DNS name label entered. ](../images/0201.png)
 
-5. Click **Review and Create** to start the automatic validation process.
+6. Click **Review and Create** to start the automatic validation process.
 
-6. Click **Create** to create the container instance. 
+7. Click **Create** to create the container instance. 
 
-7. Monitor the deployment page and the **Notifications** page. 
+8. Monitor the deployment page and the **Notifications** page. 
 
-8. While you wait you may be interested in viewing the [sample code behind this simple application](https://github.com/Azure-Samples/aci-helloworld). Browse the \app folder. 
+9. While you wait you may be interested in viewing the [sample code behind this simple application](https://github.com/Azure-Samples/aci-helloworld). Browse the \app folder. 
 
 # Task 2: Verify deployment of the container instance
 
@@ -70,5 +72,7 @@ In this task, we verify that the container instance is running by ensuring that 
 **Note**: You could also use the container IP address in your browser. 
 
 Congratulations! You have used Azure Portal to successfully deploy an application to a container in Azure Container Instance.
+
+You can repeat the lab using your own images, such as the one you created in the Docker Lab, in my case  **jdiazfernandez/holamundo:1.0**
 
 **Note**: To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
