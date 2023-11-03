@@ -26,7 +26,7 @@ In this task, you will create an Azure App Service Web App.
     | Name | **myDockerWebAppxxxx** |
     | Publish | **Docker Container** |
     | Operating System | **Linux** |
-    | Region | **East US** (ignore any service plan availability warnings) |
+    | Region | **West Europe** (ignore any service plan availability warnings) |
     | Pricing plan | **(Default)** |	
 
 4. Click **Next > Docker** and configure the container information. The startup command is optional and not needed in this exercise. 
@@ -38,7 +38,7 @@ In this task, you will create an Azure App Service Web App.
     | Options | **Single container** |
     | Image Source | **Docker Hub** |
     | Access Type | **Public** |
-    | Image and tag | **microsoft/aci-helloworld** |
+    | Image and tag | **mcr.microsoft.com/azuredocs/aci-helloworld** |
     | | |	
 
 
