@@ -34,7 +34,9 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
 2. In the Bash session, within the Cloud Shell pane, create a new resource group. 
 
     ```cli
-    az group create --name myRGCLI --location EastUS
+    resourcegroup="myResourceGroupVMCLI"
+    location="westeurope"
+    az group create --name $resourcegroup --location $location
     ```
 
 3. Verify the resource group was created.
@@ -46,25 +48,32 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
 4. Create a new virtual machine. Make sure that each line except for the last one is followed by the backslash (`\`) character. If you type the whole command on the same line, do not use any backslash characters. 
 
     ```cli
+    vmname="myVM"
+    username="azureuser"
     az vm create \
-    --name myVMCLI \
-    --resource-group myRGCLI \
+    --resource-group $resourcegroup \
+    --name $vmname \
     --image Ubuntu2204 \
-    --location EastUS \
-    --admin-username azureuser \
-    --admin-password Pa$$w0rd1234
+    --public-ip-sku Standard \
+    --admin-username $username \
+	--authentication-type all \
+	--generate-ssh-keys
     ```
 
     >**Note**: If you are using the command line on a Windows computer, replace the backslash (`\`) character with the caret (`^`) character.
     
-    **Note**: The command will take 2 to 3 minutes to complete. The command will create a virtual machine and various resources associated with it such as storage, networking and security resources. Do not continue to the next step until the virtual machine deployment is complete. 
+    >**Note**: Your are requested for an admin password. Password requirements when creating a VM: between 12 – 123 characters; have lower characters; have upper characters; have a digit; have a special character.
 
-5. When the command finishes running, in the browser window, close the Cloud Shell pane.
+    
+    >**Note**: The command will take 2 to 3 minutes to complete. The command will create a virtual machine and various resources associated with it such as storage, networking and security resources. Do not continue to the next step until the virtual machine deployment is complete. 
 
-6. In the Azure portal, search for **Virtual machines** and verify that **myVMCLI** is running.
-
-    ![Screenshot of the virtual machines page with myVMPS in a running state.](../images/1101.png)
-
+5. In the Azure portal, search for **Virtual machines** and verify that your VM is running. Copy the Public IP address
+   
+6. SSH connect
+    ```cli
+    ssh azureuser@**your_ip**
+    ```
+    Now you are in the bash of your virtual machine. If you want to exit, write exit.
 
 # Task 3: Execute commmands in the Cloud Shell
 
@@ -77,19 +86,19 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
 3. Retrieve information about the virtual machine you provisioned, including name, resource group, location, and status. Notice the PowerState is **running**.
 
     ```cli
-    az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
+    az vm show --resource-group $resourcegroup --name $vmname --show-details --output table 
     ```
 
 4. Stop the virtual machine. Notice the message that billing continues until the virtual machine is deallocated. 
 
     ```cli
-    az vm stop --resource-group myRGCLI --name myVMCLI
+    az vm stop --resource-group $resourcegroup --name $vmname
     ```
 
 5. Verify your virtual machine status. The PowerState should now be **stopped**.
 
     ```cli
-    az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
+    az vm show --resource-group $resourcegroup --name $vmname --show-details --output table 
     ```
 
 # Task 4: Review Azure Advisor Recommendations
